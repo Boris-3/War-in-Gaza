@@ -11,7 +11,7 @@ default = no
 focus = {
 	id = HAM_before_war_info
 	cost = 0.143
-	x = 18
+	x = 0
 	y = 0
 	completion_reward={
 		country_event = {
@@ -24,10 +24,13 @@ focus = {
 	}
 }
 focus = {
-	id = HAM_before_war_train
+	id = HAM_ground_train
 	cost = 0.143
-	x = 0
-	y = 1
+	prerequisite = {
+			focus = HAM_before_war_info
+		}
+	x = 5
+	y = 2
 	completion_reward={
 			army_experience = 10
 			air_experience = 5
@@ -38,8 +41,11 @@ focus = {
 }
 focus = {
 	id = HAM_Air_force_training
+	prerequisite = {
+			focus = HAM_before_war_info
+		}
 	cost = 0.143
-	x = 0
+	x = -5
 	y = 2
 	completion_reward={
 			air_experience = 20
@@ -51,8 +57,11 @@ focus = {
 focus = {
 	id = HAM_Preparation_of_naval_landings
 	cost = 0.143
+	prerequisite = {
+			focus = HAM_before_war_info
+		}
 	x = 0
-	y = 3
+	y = 5
 	completion_reward = {
 	}
 	ai_will_do = {
@@ -62,8 +71,11 @@ focus = {
 focus = {
 	id = HAM_Building_land_fortifications
 	cost = 0.143
-	x = 0
-	y = 4
+	prerequisite = {
+			focus = HAM_Preparation_of_naval_landings
+		}
+	x = 4
+	y = 11
 	completion_reward={
 			construction_of_fortification_speed = +50%
 	}
@@ -74,8 +86,11 @@ focus = {
 focus = {
 	id = HAM_Fool_Mossad
 	cost = 0.143
-	x = 0
-	y = 5
+	prerequisite = {
+			focus = HAM_Building_land_fortifications
+		}
+	x = 5
+	y = 17
 	completion_reward={
 	}
 	ai_will_do = {
@@ -85,8 +100,11 @@ focus = {
 focus = {
 	id = HAM_Coordinate_with_Hezbolla
 	cost = 0.143
-	x = 0
-	y = 6
+	prerequisite = {
+			focus = HAM_Fool_Mossad
+		}
+	x = 8
+	y = 23
 	completion_reward={
 	}
 	ai_will_do = {
