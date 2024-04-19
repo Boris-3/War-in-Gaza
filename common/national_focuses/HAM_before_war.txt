@@ -29,10 +29,8 @@ focus = {
 	x = 0
 	y = 1
 	completion_reward={
-		country_event = {
 			army_experience = 10
 			air_experience = 5
-		}
 	}
 	ai_will_do = {
 		factor = 1
@@ -42,11 +40,9 @@ focus = {
 	id = HAM_Air_force_training
 	cost = 0.143
 	x = 0
-	y = 1
+	y = 2
 	completion_reward={
-		country_event = {
 			air_experience = 20
-		}
 	}
 	ai_will_do = {
 		factor = 1
@@ -56,10 +52,8 @@ focus = {
 	id = HAM_Preparation_of_naval_landings
 	cost = 0.143
 	x = 0
-	y = 1
-	completion_reward={
-		country_event = {
-		}
+	y = 3
+	completion_reward = {
 	}
 	ai_will_do = {
 		factor = 1
@@ -69,11 +63,9 @@ focus = {
 	id = HAM_Building_land_fortifications
 	cost = 0.143
 	x = 0
-	y = 1
+	y = 4
 	completion_reward={
-		country_event = {
 			construction_of_fortification_speed = +50%
-		}
 	}
 	ai_will_do = {
 		factor = 1
@@ -83,10 +75,8 @@ focus = {
 	id = HAM_Fool_Mossad
 	cost = 0.143
 	x = 0
-	y = 1
+	y = 5
 	completion_reward={
-		country_event = {
-		}
 	}
 	ai_will_do = {
 		factor = 1
@@ -96,10 +86,8 @@ focus = {
 	id = HAM_Coordinate_with_Hezbolla
 	cost = 0.143
 	x = 0
-	y = 1
+	y = 6
 	completion_reward={
-		country_event = {
-		}
 	}
 	ai_will_do = {
 		factor = 1
