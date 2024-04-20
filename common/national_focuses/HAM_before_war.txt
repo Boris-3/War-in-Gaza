@@ -10,8 +10,8 @@ focus_tree = {
 default = no
 focus = {
 	id = HAM_before_war_info
-	cost = 0.143
-	x = 18
+	cost = 0.5
+	x = 0
 	y = 0
 	completion_reward={
 		country_event = {
@@ -24,17 +24,121 @@ focus = {
 	}
 }
 focus = {
-	id = HAM_before_war_train
-	cost = 0.143
-	x = 0
-	y = 1
+	id = HAM_ground_train
+	cost = 2
+	prerequisite = {
+			focus = HAM_before_war_info
+		}
+	x = 5
+	y = 2
 	completion_reward={
-		country_event = {
 			army_experience = 10
 			air_experience = 5
-		}
 	}
 	ai_will_do = {
 		factor = 1
 	}
 }
+focus = {
+	id = HAM_Air_force_training
+	prerequisite = {
+			focus = HAM_before_war_info
+		}
+	cost = 3
+	x = -5
+	y = 2
+	completion_reward={
+			air_experience = 20
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+focus = {
+	id = HAM_Preparation_of_naval_landings
+	cost = 5
+	prerequisite = {
+			focus = HAM_before_war_info
+		}
+	x = 0
+	y = 5
+	completion_reward = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+focus = {
+	id = HAM_Building_land_fortifications
+	cost = 3
+	prerequisite = {
+			focus = HAM_Preparation_of_naval_landings
+		}
+	x = 4
+	y = 11
+	completion_reward={
+			production_speed_bunker_factor = 0.2
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+focus = {
+	id = HAM_Fool_Mossad
+	cost = 2
+	prerequisite = {
+			focus = HAM_Building_land_fortifications
+		}
+	x = 5
+	y = 17
+	completion_reward={
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+focus = {
+	id = HAM_Coordinate_with_Hezbolla
+	cost = 5
+	prerequisite = {
+			focus = HAM_Fool_Mossad
+		}
+	x = 8
+	y = 23
+	completion_reward={
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+focus = {
+	id = HAM_Create_own_scouting
+	cost = 5
+	prerequisite = {
+			focus = HAM_Coordinate_with_Hezbolla
+		}
+	x = 10
+	y = 30
+	completion_reward={
+add_war_support = 0.05
+add_political_power = 50
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+focus = {
+	id = HAM_Good_relations_with_Egypt
+	prerequisite = {
+			focus = HAM_Create_own_scouting
+		}
+	x = 10
+	y = 40
+	completion_reward={
+opinion_modifier_EGY = 20
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
