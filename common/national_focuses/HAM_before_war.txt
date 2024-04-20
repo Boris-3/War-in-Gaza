@@ -111,3 +111,34 @@ focus = {
 		factor = 1
 	}
 }
+focus = {
+	id = HAM_Create_own_scouting
+	cost = 5
+	prerequisite = {
+			focus = HAM_Coordinate_with_Hezbolla
+		}
+	x = 8
+	y = 23
+	completion_reward={
+add_war_support = 0.05
+add_political_power = 50
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+focus = {
+	id = HAM_Good_relations_with_Egypt
+	prerequisite = {
+			focus = HAM_Create_own_scouting
+		}
+	x = 8
+	y = 23
+	completion_reward={
+opinion_modifier = 20
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
