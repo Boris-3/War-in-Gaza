@@ -77,7 +77,7 @@ focus = {
 	x = 4
 	y = 11
 	completion_reward={
-			construction_of_fortification_speed = +50%
+			production_speed_bunker_factor = 0.2
 	}
 	ai_will_do = {
 		factor = 1
@@ -117,8 +117,8 @@ focus = {
 	prerequisite = {
 			focus = HAM_Coordinate_with_Hezbolla
 		}
-	x = 8
-	y = 23
+	x = 10
+	y = 30
 	completion_reward={
 add_war_support = 0.05
 add_political_power = 50
@@ -132,10 +132,10 @@ focus = {
 	prerequisite = {
 			focus = HAM_Create_own_scouting
 		}
-	x = 8
-	y = 23
+	x = 10
+	y = 40
 	completion_reward={
-opinion_modifier = 20
+opinion_modifier_EGY = 20
 	}
 	ai_will_do = {
 		factor = 1
