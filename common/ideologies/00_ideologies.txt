@@ -1,0 +1,20 @@
+ideologies = {
+  zionism = {
+    types = {
+      generic_zionism = {
+}
+      left_zionism = {
+}
+      right_zionism = {
+}
+      kahanism = {
+       can_be_randomly_selected = no
+ }
+}
+
+dynamic_faction_names = {
+			"FACTION_NAME_ZIONISM_1"
+			"FACTION_NAME_ZIONISM_2"
+			"FACTION_NAME_ZIONISM_3"
+}
+color = { 10 0 255 }
